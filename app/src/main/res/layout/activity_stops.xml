@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    tools:context=".activities.StopsActivity"
+    android:orientation="vertical"
+    android:background="@color/splash_screen_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_above="@id/adView">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/primary">
+
+        <ImageView
+            android:id="@+id/left_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="16dp"
+            android:src="@drawable/bus_icon"
+            app:tint="@color/white"/>
+
+        <TextView
+            android:id="@+id/text_view_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@id/left_icon"
+            android:gravity="center"
+            android:text="@string/route"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_marginBottom="7dp"
+        android:id="@+id/text_view_direction_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Stops"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:layout_gravity="center"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:visibility="visible"
+        />
+
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111"/>
+
+</RelativeLayout>

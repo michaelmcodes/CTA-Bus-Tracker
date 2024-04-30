@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">CTA Tracker</string>
+    <string name="API_KEY">gLq3fq5BkExQt6PpXh9PrUSAX</string>
+    <string name="loacation_request_rationale">\"This applications needs Fine Accuracy permission in order to determine the closet stops bus to your location. It will not function properly without it. Will you allow it? \"</string>
+    <string name="fine_accuracy_needed">Fine Accuracy needed</string>
+    <string name="yes">Yes</string>
+    <string name="no_thanks">No Thanks</string>
+    <string name="loacation_request_rationale_denied">This applications needs Fine Accuracy permission in order to determine the closet stops bus to your location. Please start the application again and allow this permission</string>
+    <string name="search_by">Search by route number/name</string>
+    <string name="route">Route</string>
+    <string name="stops">Stops</string>
+    <string name="no_pred_available">No predictions available</string>
+    <string name="error_fecthing_prediction">Error fetching predictions</string>
+    <string name="bus_number">Bus #</string>
+    <string name="ok">Ok</string>
+    <string name="bus_tracker_cta">Bus Tracker - CTA</string>
+    <string name="info">CTA Bus Tracker data provided by the Chicago Transit Authority \n https://www.transitchicago.com/developers/bustracker/</string>
+</resources>
